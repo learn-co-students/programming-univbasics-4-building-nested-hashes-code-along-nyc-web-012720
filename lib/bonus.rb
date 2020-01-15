@@ -1,3 +1,4 @@
+# require "pry"
 def bonus
   epic_tragedy = {
    :montague => {
@@ -19,12 +20,12 @@ def bonus
       ]
    }
   }
-
+# binding.pry
   #code your solution here:
-# :montague[:hero][:status] = "dead"
-# :capulet[:heroine][:status] = "dead"
-# :status => "dead"
-# return epic_tragedy
+  # epic_tragedy[0][2][2] = "dead"
+  # epic_tragedy[1][2][2] = "dead"
+  epic_tragedy[:montague][:hero][:status] = "dead"
+  epic_tragedy[:capulet][:heroine][:status] = "dead"
   #Don't touch the following line! The `bonus` method must return our newly modified epic tragedy hash
   epic_tragedy
 end
